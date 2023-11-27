@@ -305,8 +305,8 @@ class _lixian_PandianRouteState extends State<lixian_PandianRoute> {
       appBar: AppBar(
         // backgroundColor: Color.fromARGB(255, 226, 224, 224),
         automaticallyImplyLeading: false,
-        title: const Text("离线盘点"),
-        backgroundColor: Color.fromRGBO(86, 134, 219, 1),
+        title: const Text("鸿宇盘点-离线"),
+        backgroundColor: Color.fromRGBO(231, 115, 100, 1), 
         leading: Builder(builder: (context) {
           return IconButton(
             icon: const Icon(Icons.arrow_back),
@@ -323,6 +323,7 @@ class _lixian_PandianRouteState extends State<lixian_PandianRoute> {
               _showPopupWindow(context);
             }, //按钮事件处理成函数，用于执行重复代码
           ),
+          
           IconButton(
             icon: const Icon(Icons.apps), //自定义图标
             onPressed: () {
@@ -447,6 +448,16 @@ class _lixian_PandianRouteState extends State<lixian_PandianRoute> {
                   ],
                 ),
               ],
+            ),
+            const Expanded(
+              child: Card(
+                color: Color.fromARGB(255, 248, 207, 222),
+                child: Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Text(
+                      '基本用法同在线盘点\n注意:下载离线数据会清除之前的离线数据和盘点数据\n注意:盘点结束后及时上传离线数据\n离线盘点需要先下载离线数据，点本页右上角的‘↓’按钮,然后输入离线数据的分类编码，点击下载按钮等待数据下载完成即可\n上传离线数据点击数据查看页右上角的‘↑’按钮,等待完成即可'),
+                ),
+              ),
             ),
           ],
         ),

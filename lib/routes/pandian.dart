@@ -243,7 +243,7 @@ class _PandianRouteState extends State<PandianRoute> {
         // backgroundColor: Color.fromARGB(255, 226, 224, 224),
         automaticallyImplyLeading: false,
         title: const Text("鸿宇盘点-在线"),
-        backgroundColor: const Color.fromRGBO(86, 134, 219, 1),
+        backgroundColor: Color.fromRGBO(86, 134, 219, 1),
         leading: Builder(builder: (context) {
           return IconButton(
             icon: const Icon(Icons.arrow_back),
@@ -351,7 +351,16 @@ class _PandianRouteState extends State<PandianRoute> {
                       ))
                     ],
                   ),
+                 
                 ]),
+                 const Expanded(
+                      child: Card(
+                         color: Color.fromARGB(255, 248, 207, 222),
+                    child: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text('数量支持加减乘除的计算。如12*2或23+5 \n盘点错误时可以在量前面加‘-’表示减少\n数量为商品的最小单位:(商品入库的单位) \n重量单位kg/千克/公斤精确到小数点后2位。\n盘点商品时如果未出现商品名字建议再扫一次条码试试'),
+                    ),
+                  ),),
           ])),
       floatingActionButton: Stack(
         children: <Widget>[

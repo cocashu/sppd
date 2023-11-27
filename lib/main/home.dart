@@ -30,10 +30,10 @@ class _PinterestGridState extends State<PinterestGrid1> {
               crossAxisCellCount: 2,
               mainAxisCellCount: 1,
               child: MenuEntry(
-                title: '盘点工具',
+                title: '在线盘点',
                 iconName: Icons.crop_free,
                 destination: PandianRoute(),
-                color: Color.fromRGBO(231, 115, 100, 1), // 将颜色作为参数传递进去
+                color:  Color.fromRGBO(86, 134, 219, 1), // 将颜色作为参数传递进去
               ),
             ),
             StaggeredGridTile.count(
@@ -43,7 +43,7 @@ class _PinterestGridState extends State<PinterestGrid1> {
                 title: '离线盘点',
                 iconName: Icons.crop_free,
                 destination: lixian_PandianRoute(),
-                color: Color.fromRGBO(86, 134, 219, 1), // 将颜色作为参数传递进去
+                color: Color.fromRGBO(231, 115, 100, 1),// 将颜色作为参数传递进去
               ),
             ),
             // StaggeredGridTile.count(
