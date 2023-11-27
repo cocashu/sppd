@@ -99,6 +99,7 @@ class _RequestRouteState extends State<RequestRoute> {
     return Scaffold(
       appBar: AppBar(
         title: Text('离线产品列表'),
+         backgroundColor: Color.fromRGBO(231, 115, 100, 1), 
         actions: [
           IconButton(
             icon: const Icon(Icons.clear, color: Colors.red), //清空盘点数据
